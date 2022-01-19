@@ -28,5 +28,7 @@ public class Customer {
         return value;
     }
 
+    public void setId(String identity) { id = identity; }
+
 
 }
