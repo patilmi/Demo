@@ -52,9 +52,9 @@ public class CustomerService {
     }
 
     public Customer deleteCustomer(String id) {
-        Customer temp = customerRepo.get(id);
+        Customer deletedCustomer = customerRepo.get(id);
         customerRepo.remove(id);
-        return temp;
+        return deletedCustomer;
     }
 
 
