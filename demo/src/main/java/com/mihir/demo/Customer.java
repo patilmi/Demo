@@ -1,11 +1,16 @@
 package com.mihir.demo;
 
+import lombok.Data;
+
+@Data
 public class Customer {
     //attributes
     String id;
     String name;
     int accountSince;
     int value;
+
+    public Customer() {}
 
     public Customer(String id, String name, int accountSince, int value) {
         this.id = id;
@@ -14,21 +19,21 @@ public class Customer {
         this.value = value;
     }
 
-    public String getId(){ return id; }
+    //public String getId(){ return id; }
 
-    public String getName(){
-        return name;
-    }
-
-    public int getAccountSince(){
-        return accountSince;
-    }
-
-    public int getValue(){
-        return value;
-    }
-
-    public void setId(String identity) { id = identity; }
+//    public String getName(){
+//        return name;
+//    }
+//
+//    public int getAccountSince(){
+//        return accountSince;
+//    }
+//
+//    public int getValue(){
+//        return value;
+//    }
+//
+//    public void setId(String identity) { id = identity; }
 
 
 }

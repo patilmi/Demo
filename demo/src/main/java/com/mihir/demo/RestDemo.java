@@ -25,11 +25,11 @@ public class RestDemo {
     @Autowired
     public CustomerService customerService;
 
-    @RequestMapping(value= "/customers")
-    @ResponseBody
-    public Collection<Customer> getCustomer() {
-        return customerService.readCustomers();
-    }
+//    @RequestMapping(value= "/customers")
+//    @ResponseBody
+//    public Collection<Customer> getCustomer() {
+//        return customerService.readCustomers();
+//    }
 
     @RequestMapping(value= "/customers/{id}")
     @ResponseBody
